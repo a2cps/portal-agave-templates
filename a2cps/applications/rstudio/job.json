@@ -1,0 +1,16 @@
+{
+  "name": "tap_rstudio-job",
+  "appId": "tap_rstudio-0.0.1",
+  "batchQueue": "development",
+  "maxRunTime": "01:00:00",
+  "memoryPerNode": "1GB",
+  "nodeCount": 1,
+  "processorsPerNode": 1,
+  "archive": false,
+  "inputs": {},
+  "parameters": {
+    "email": "vaughn@tacc.utexas.edu",
+    "workdir": "/work2/01374/vaughn"
+  },
+  "notifications": []
+}

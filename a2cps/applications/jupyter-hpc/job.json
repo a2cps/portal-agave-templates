@@ -1,0 +1,15 @@
+{
+  "name": "tap_jupyter-job-1645531777419",
+  "appId": "tap_jupyter-0.0.1",
+  "batchQueue": "corralextra",
+  "maxRunTime": "01:00:00",
+  "memoryPerNode": "1GB",
+  "nodeCount": 1,
+  "processorsPerNode": 1,
+  "archive": false,
+  "inputs": {},
+  "parameters": {
+    "email": "vaughn@tacc.utexas.edu"
+  },
+  "notifications": []
+}

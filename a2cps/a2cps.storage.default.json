@@ -1,0 +1,28 @@
+{
+    "available": true,
+    "description": "A2CPS Default Storage System",
+    "storage": {
+        "proxy": null,
+        "protocol": "SFTP",
+        "mirror": false,
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "vaughn",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "publicAppsDir": null,
+        "host": "login8.frontera.tacc.utexas.edu",
+        "homeDir": "/corral-secure/projects/A2CPS/Frontera",
+        "rootDir": "/"
+    },
+    "type": "STORAGE",
+    "revision": 1,
+    "site": "a2cps",
+    "default": false,
+    "public": true,
+    "globalDefault": true,
+    "name": "a2cps.storage.default",
+    "id": "a2cps.storage.default"
+}

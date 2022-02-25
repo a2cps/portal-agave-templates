@@ -1,0 +1,88 @@
+{
+    "maxSystemJobs": 500,
+    "executionType": "HPC",
+    "available": true,
+    "description": "Frontera has two computing subsystems, a primary computing system focused on double precision performance, and a second subsystem focused on single precision streaming-memory computing.",
+    "storage": {
+        "proxy": null,
+        "protocol": "SFTP",
+        "mirror": false,
+        "host": "login8.frontera.tacc.utexas.edu",
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "vaughn",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "homeDir": "/corral-secure/projects/A2CPS/shared/vaughn/",
+        "rootDir": "/"
+    },
+    "type": "EXECUTION",
+    "login": {
+        "proxy": null,
+        "protocol": "SSH",
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "vaughn",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "host": "login8.frontera.tacc.utexas.edu"
+    },
+    "startupScript": "~/.bashrc",
+    "scheduler": "SLURM",
+    "default": false,
+    "public": false,
+    "maxSystemJobsPerUser": 250,
+    "id": "a2cps.hpc-frontera-vaughn",
+    "workDir": "/work2/01374/vaughn/frontera",
+    "site": "tacc.utexas.edu",
+    "environment": "",
+    "queues": [
+        {
+            "name": "development",
+            "maxJobs": -1,
+            "maxMemoryPerNode": "192GB",
+            "default": false,
+            "maxRequestedTime": "02:00:00",
+            "description": null,
+            "maxNodes": 40,
+            "maxProcessorsPerNode": 2240,
+            "mappedName": null,
+            "maxUserJobs": 1,
+            "customDirectives": "-A A2CPS"
+        },
+        {
+            "maxJobs": 48,
+            "maxMemoryPerNode": 192,
+            "default": true,
+            "maxRequestedTime": "48:00:00",
+            "name": "corralextra",
+            "description": null,
+            "maxNodes": 171,
+            "maxProcessorsPerNode": 4104,
+            "mappedName": null,
+            "maxUserJobs": 48,
+            "customDirectives": "-A A2CPS"
+        },
+        {
+            "maxJobs": 15,
+            "maxMemoryPerNode": 192,
+            "default": false,
+            "maxRequestedTime": "48:00:00",
+            "name": "rtx-corralextra",
+            "description": null,
+            "maxNodes": 11,
+            "maxProcessorsPerNode": 264,
+            "mappedName": null,
+            "maxUserJobs": 15,
+            "customDirectives": "-A A2CPS"
+        }
+    ],
+    "globalDefault": false,
+    "name": "TACC Frontera Protected HPC (vaughn)",
+    "status": "UP",
+    "scratchDir": "/scratch1/01374/vaughn//"
+}

@@ -1,0 +1,27 @@
+{
+    "available": true,
+    "description": "A2CPS Public Storage System",
+    "storage": {
+        "proxy": null,
+        "protocol": "SFTP",
+        "mirror": false,
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "vaughn",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "publicAppsDir": null,
+        "host": "login8.frontera.tacc.utexas.edu",
+        "homeDir": "/corral-secure/projects/A2CPS/public",
+        "rootDir": "/"
+    },
+    "type": "STORAGE",
+    "revision": 1,
+    "site": "a2cps",
+    "public": true,
+    "globalDefault": false,
+    "name": "a2cps.storage.public",
+    "id": "a2cps.storage.public"
+}

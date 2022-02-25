@@ -1,0 +1,28 @@
+{
+    "available": true,
+    "description": "Default storage system for frontera",
+    "storage": {
+        "proxy": null,
+        "protocol": "SFTP",
+        "mirror": false,
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "wma_prtl",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "publicAppsDir": null,
+        "host": "frontera.tacc.utexas.edu",
+        "homeDir": "/corral-repl/tacc/aci/Frontera",
+        "rootDir": "/"
+    },
+    "type": "STORAGE",
+    "revision": 1,
+    "site": "tacc.prod",
+    "default": false,
+    "public": false,
+    "globalDefault": false,
+    "name": "frontera.storage.default",
+    "id": "frontera.storage.default"
+}

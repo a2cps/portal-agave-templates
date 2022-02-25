@@ -1,0 +1,62 @@
+{
+    "maxSystemJobs": 500,
+    "executionType": "CLI",
+    "available": true,
+    "description": "Frontera has two computing subsystems, a primary computing system focused on double precision performance, and a second subsystem focused on single precision streaming-memory computing.",
+    "storage": {
+        "proxy": null,
+        "protocol": "SFTP",
+        "mirror": false,
+        "host": "frontera.tacc.utexas.edu",
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "wma_prtl",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "homeDir": "/scratch1/04957/wma_prtl/",
+        "rootDir": "/"
+    },
+    "type": "EXECUTION",
+    "login": {
+        "proxy": null,
+        "protocol": "SSH",
+        "port": 22,
+        "auth": {
+            "type": "SSHKEYS",
+            "username": "wma_prtl",
+            "publicKey": "$SSH_PUB_KEY",
+            "privateKey": "$SSH_PRIV_KEY"
+        },
+        "host": "frontera.tacc.utexas.edu"
+    },
+    "startupScript": "~/.bashrc",
+    "scheduler": "FORK",
+    "default": false,
+    "public": false,
+    "maxSystemJobsPerUser": 250,
+    "id": "frontera.community.exec.frontera.cli",
+    "workDir": "/work/04957/wma_prtl/",
+    "site": "tacc.utexas.edu",
+    "environment": "",
+    "queues": [
+        {
+            "maxJobs": -1,
+            "maxMemoryPerNode": 1,
+            "default": true,
+            "maxRequestedTime": "24:00:00",
+            "name": "debug",
+            "description": null,
+            "maxNodes": 1,
+            "maxProcessorsPerNode": 1,
+            "mappedName": null,
+            "maxUserJobs": 50,
+            "customDirectives": "-A TACC-ACI"
+        }
+    ],
+    "globalDefault": false,
+    "name": "TACC Frontera CLI Community Execution System",
+    "status": "UP",
+    "scratchDir": "/scratch1/04957/wma_prtl/"
+}
